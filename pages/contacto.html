@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CrisCar</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <p>¡Contáctanos para más información!</p>
+  </header>
+
+  <main>
+
+    <form id="contact-form" role="form" aria-label="Formulario de contacto">
+
+      <div>
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+          aria-required="true"
+          placeholder="Ingresá tu nombre">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          aria-required="true"
+          placeholder="ejemplo@email.com">
+      </div>
+
+      <div>
+        <label for="asunto">Asunto</label>
+        <input
+          type="text"
+          id="asunto"
+          name="asunto"
+          required
+          aria-required="true"
+          placeholder="Motivo del mensaje">
+      </div>
+
+      <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          rows="6"
+          required
+          aria-required="true"
+          placeholder="Escribí tu mensaje acá">
+        </textarea>
+      </div>
+
+      <button
+        type="submit"
+        aria-label="Enviar formulario">
+        Enviar
+      </button>
+
+      <div>
+        <a href="../index.html">Inicio</a>
+      </div>
+      
+    </form>
+  </main>
+  
+<footer>
+        <p>© 2026 CRISCAR - Panadería y Cafetería</p>
+        <p>Todos los derechos reservados.</p>
+</footer>
+</body>
+
+</html>
