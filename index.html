@@ -1,60 +1,280 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRISCAR</title>
-    <link rel="stylesheet" href="./styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRISCAR</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <header>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a class="btn btn-secundario" href="./pages/menu.html">Menú</a>
+        </li>
+        <li>
+          <a class="btn btn-secundario" href="./pages/galeria.html">Galería</a>
+        </li>
+        <li>
+          <a class="btn btn-secundario" href="./pages/nosotros.html">Nosotros</a>
+        </li>
+        <li>
+          <a class="btn btn-secundario" href="./pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="branding">
+      <div class="branding__logo">
+        <img src="./assets/imgs/logo.webp" alt="Logo de CrisCar" class="logo-img">
+      </div>
+      <div class="branding__encabezado">
         <h1>CRISCAR</h1>
-        <h2>Bienvenidos</h2>
-        <p>Desayunos, meriendas, almuerzos y cenas en un ambiente cálido y familiar. Un espacio pensado para disfrutar de buena comida, panificados artesanales y momentos especiales en familia o con amigos. Descubrí nuestras especialidades y promociones.</p>
-       <nav>
-            <ul>
-              <li>
-                <a href="./pages/menu.html">Menú</a> 
-              </li>
-              <li>
-                <a href="./pages/galeria.html">Galería</a>
-              </li>
-              <li>
-                <a href="./pages/nosotros.html">Nosotros</a>
-              </li>
-              <li>
-                <a href="./pages/contacto.html">Contacto</a>
-              </li>
-            </ul>
-        </nav>
+        <p>Panadería • Cafetería • Restaurante</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__texto">
+        <h2>Nuestros productos</h2>
+        <p>Elaboramos diariamente panificados artesanales,
+          facturas, medialunas, tortas y especialidades para
+          acompañar cada momento del día.</p>
+        <p> También ofrecemos desayunos, meriendas, almuerzos y cenas
+          para disfrutar en nuestros locales.</p>
 
-    </header>
-<main>
-        <section>
-        <div>
-          <div>
-            <h2>Nuestros productos</h2>
-            <p>Elaboramos diariamente panificados artesanales,
-                facturas, medialunas, tortas y especialidades para
-                acompañar cada momento del día.</p>
-            <p>  También ofrecemos desayunos, meriendas, almuerzos y cenas
-                para disfrutar en nuestros locales.</p>  
-          </div>
-                 
-          <div>
-              <img src="./assets/imgs/medialuna.webp" alt="Medialunas artesanales" class="img-hero">
-          </div>
-          <a href="./pages/menu.html">Ver Menú</a>
+        <div class="hero__botones">
+          <a class="btn btn-principal" href="./pages/menu.html">Ver Menú</a>
 
-          <a href="./pages/contacto.html">Reservas y Contacto</a>
+          <a class="btn btn-secundario" href="./pages/contacto.html">Reservas y Contacto</a>
         </div>
-      </section>
-</main> 
+      </div>
 
-<footer>
-        <p>© 2026 CRISCAR - Panadería y Cafetería</p>
-        <p>Todos los derechos reservados.</p> 
-</footer>
+      <div class="hero__imagen">
+        <img src="./assets/imgs/medialuna.webp" alt="Medialunas artesanales" class="img-hero">
+      </div>
+    </section>
+
+    <!-- PRODUCTOS DESTACADOS -->
+    <section class="productos">
+    
+      <h2>Productos Destacados</h2>
+    
+      <p class="productos__descripcion">
+        Elaboramos cada día productos frescos y artesanales para acompañarte en cualquier momento.
+      </p>
+    
+      <div class="productos__grid">
+    
+        <article class="producto__card">
+    
+          <img src="./assets/imgs/medialuna.webp" alt="Panificados artesanales">
+    
+          <h3>Panificados</h3>
+    
+          <p>
+            Medialunas, criollos, facturas, panes y especialidades
+            recién horneadas todos los días.
+          </p>
+    
+          <a class="btn btn-principal" href="./pages/menu.html">
+            Ver más
+          </a>
+    
+        </article>
+    
+        <article class="producto__card">
+    
+          <img src="./assets/imgs/cafe.webp" alt="Cafetería">
+    
+          <h3>Cafetería</h3>
+    
+          <p>
+            Café, capuchino, submarino, licuados e infusiones para
+            disfrutar en un ambiente cálido.
+          </p>
+    
+          <a class="btn btn-principal" href="./pages/menu.html">
+            Ver más
+          </a>
+    
+        </article>
+    
+        <article class="producto__card">
+    
+          <img src="./assets/imgs/almuerzo.webp" alt="Almuerzos y cenas">
+    
+          <h3>Almuerzos y Cenas</h3>
+    
+          <p>
+            Pizzas, hamburguesas, sándwiches y platos elaborados para
+            compartir en familia.
+          </p>
+    
+          <a class="btn btn-principal" href="./pages/menu.html">
+            Ver más
+          </a>
+    
+        </article>
+      </div>
+    
+    </section>
+    
+    <!-- NOSOTROS -->
+    <section class="nosotros">
+    
+      <div class="nosotros__imagen">
+        <img src="./assets/imgs/local.webp" alt="Local de CrisCar">
+      </div>
+    
+      <div class="nosotros__texto">
+    
+        <h2>Nuestra Historia</h2>
+    
+        <p>
+          CrisCar nació en 1990 con el sueño de ofrecer productos artesanales
+          elaborados con dedicación y la calidez de una atención familiar.
+        </p>
+    
+        <p>
+          Hoy, con más de 35 años de trayectoria y presencia en Río Segundo y
+          Pilar, seguimos acompañando a nuestros clientes en desayunos,
+          meriendas, almuerzos y cenas, manteniendo la calidad que nos
+          caracteriza desde nuestros comienzos.
+        </p>
+    
+        <a class="btn btn-principal" href="./pages/nosotros.html">
+          Conocé más
+        </a>
+    
+      </div>
+    
+    </section>
+    
+    <!-- ¿POR QUÉ ELEGIRNOS? -->
+    <section class="por-que-elegirnos">
+    
+      <h2>¿Por qué elegir CrisCar?</h2>
+    
+      <p class="elegirnos__descripcion">
+        Hace más de 35 años trabajamos con el compromiso de brindar productos frescos,
+        atención cálida y un espacio para disfrutar en familia.
+      </p>
+    
+      <div class="ventajas__grid">
+    
+        <article class="ventaja">
+          <img src="./assets/icons/pan.svg" alt="Pan artesanal">
+          <h3>Elaboración artesanal</h3>
+          <p>Panificados, facturas y tortas elaborados diariamente con ingredientes de calidad.</p>
+        </article>
+    
+        <article class="ventaja">
+          <img src="./assets/icons/cafe.svg" alt="Ambiente cálido">
+          <h3>Ambiente familiar</h3>
+          <p>Un lugar pensado para compartir desayunos, meriendas, almuerzos y cenas.</p>
+        </article>
+    
+        <article class="ventaja">
+          <img src="./assets/icons/reloj.svg" alt="Atención">
+          <h3>Atención personalizada</h3>
+          <p>Nos gusta recibir a cada cliente con la calidez que nos caracteriza desde nuestros comienzos.</p>
+        </article>
+    
+        <article class="ventaja">
+          <img src="./assets/icons/estrella.svg" alt="Trayectoria">
+          <h3>Más de 35 años</h3>
+          <p>Décadas acompañando a las familias de Río Segundo y Pilar con la misma pasión.</p>
+        </article>
+    
+      </div>
+    
+    </section>
+    
+    <!-- UBICACIÓN -->
+    <section class="ubicacion">
+    
+      <h2>Visitanos</h2>
+    
+      <p class="ubicacion__descripcion">
+        Te esperamos en cualquiera de nuestras sucursales para disfrutar de nuestros
+        productos artesanales y un ambiente cálido.
+      </p>
+    
+      <div class="ubicacion__grid">
+    
+        <article class="sucursal">
+    
+          <h3>📍 Río Segundo</h3>
+    
+          <p>
+            Corrientes y Deán Funes
+          </p>
+    
+          <p>
+            Lunes a Domingo
+            9:00 a 01:00 hs
+          </p>
+    
+          <a class="btn btn-principal" href="./pages/contacto.html">
+            Cómo llegar
+          </a>
+    
+        </article>
+    
+        <article class="sucursal">
+    
+          <h3>📍 Pilar</h3>
+    
+          <p>
+            Ruta 9 y Bv Argentino 
+          </p>
+    
+          <p>
+            Lunes a Sábado
+            9:00 a 13:00 hs
+            17:00 a 20:00 hs
+          </p>
+    
+          <a class="btn btn-principal" href="./pages/contacto.html">
+            Cómo llegar
+          </a>
+    
+        </article>
+    
+      </div>
+    
+    </section>
+    
+    <section class="cta">
+    
+      <h2>¡Te esperamos!</h2>
+    
+      <p>
+        Viví la experiencia CrisCar con productos frescos,
+        atención cálida y un espacio pensado para compartir.
+      </p>
+    
+      <a class="btn btn-principal" href="./pages/contacto.html">
+        Reservá tu mesa
+      </a>
+    
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 CRISCAR - Panadería · Cafetería · Restaurante</p>
+    <p>Todos los derechos reservados.</p>
+  </footer>
 
 </html>
-
