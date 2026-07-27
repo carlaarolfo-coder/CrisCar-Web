@@ -1,0 +1,36 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// =======================
+// GALERÍA
+// =======================
+
+
+.galeria__grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:$espaciado-md;
+
+}
+
+.galeria__item img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:$radio;
+
+    transition:.4s;
+
+}
+
+.galeria__item:hover img{
+
+    transform:scale(1.05);
+
+}
+

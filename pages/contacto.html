@@ -5,78 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - CrisCar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Contacto</h1>
-    <p>¡Contáctanos para más información!</p>
-  </header>
+<header class="header__pagina">
+
+    <h2>¿Tenés una consulta?</h2>
+    
+    <p>
+       Escribinos para realizar reservas, consultar disponibilidad
+       o solicitar información sobre nuestros productos y servicios.
+    </p>
+
+</header>
 
   <main>
-
-    <form id="contact-form" role="form" aria-label="Formulario de contacto">
-
-      <div>
-        <label for="nombre">Nombre</label>
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          required
-          aria-required="true"
-          placeholder="Ingresá tu nombre">
+    <section class="contacto">
+  
+      <div class="contacto__contenedor">
+  
+        <!-- formulario -->
+        <form class="contacto" id="contact-form" role="form" aria-label="Formulario de contacto">
+  
+          <div class="contacto__group">
+            <label for="nombre">Nombre</label>
+            <input class="contacto__input" type="text" id="nombre" name="nombre" required aria-required="true"
+              placeholder="Ingresá tu nombre">
+          </div>
+  
+          <div class="contacto__group">
+            <label for="email">Email</label>
+            <input class="contacto__input" type="email" id="email" name="email" required aria-required="true"
+              placeholder="ejemplo@email.com">
+          </div>
+  
+          <div class="contacto__group">
+            <label for="asunto">Asunto</label>
+            <input class="contacto__input" type="text" id="asunto" name="asunto" required aria-required="true"
+              placeholder="Motivo del mensaje">
+          </div>
+  
+          <div class="contacto__group">
+            <label for="mensaje">Mensaje</label>
+            <textarea class="contacto__textarea" id="mensaje" name="mensaje" rows="6" required aria-required="true"
+              placeholder="Escribí tu mensaje acá">
+          </textarea>
+          </div>
+  
+          <button class="btn btn-principal" type="submit" aria-label="Enviar formulario">
+            Enviar
+          </button>
+  
+          <div>
+            <a class="btn btn-secundario" href="../index.html">
+              Volver al inicio
+            </a>
+          </div>
+  
+        </form>
       </div>
-
-      <div>
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          aria-required="true"
-          placeholder="ejemplo@email.com">
-      </div>
-
-      <div>
-        <label for="asunto">Asunto</label>
-        <input
-          type="text"
-          id="asunto"
-          name="asunto"
-          required
-          aria-required="true"
-          placeholder="Motivo del mensaje">
-      </div>
-
-      <div>
-        <label for="mensaje">Mensaje</label>
-        <textarea
-          id="mensaje"
-          name="mensaje"
-          rows="6"
-          required
-          aria-required="true"
-          placeholder="Escribí tu mensaje acá">
-        </textarea>
-      </div>
-
-      <button
-        type="submit"
-        aria-label="Enviar formulario">
-        Enviar
-      </button>
-
-      <div>
-        <a href="../index.html">Inicio</a>
-      </div>
-      
-    </form>
+    </section>
   </main>
   
 <footer>

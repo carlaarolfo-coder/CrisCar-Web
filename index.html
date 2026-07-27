@@ -5,41 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CRISCAR</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-<link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li>
-          <a class="btn btn-secundario" href="./pages/menu.html">Menú</a>
-        </li>
-        <li>
-          <a class="btn btn-secundario" href="./pages/galeria.html">Galería</a>
-        </li>
-        <li>
-          <a class="btn btn-secundario" href="./pages/nosotros.html">Nosotros</a>
-        </li>
-        <li>
-          <a class="btn btn-secundario" href="./pages/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </nav>
+  <nav class="menu">
+    <button class="menu__boton">
+      ☰ Descubrí CrisCar
+    </button>
+    <ul class="menu__lista">
+      <li class="menu__item"><a href="./pages/menu.html">Menú</a></li>
+      <li class="menu__item"><a href="./pages/galeria.html">Galería</a></li>
+      <li class="menu__item"><a href="./pages/nosotros.html">Nosotros</a></li>
+      <li class="menu__item"><a href="./pages/contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
     <div class="branding">
-      <div class="branding__logo">
-        <img src="./assets/imgs/logo.webp" alt="Logo de CrisCar" class="logo-img">
-      </div>
-      <div class="branding__encabezado">
-        <h1>CRISCAR</h1>
-        <p>Panadería • Cafetería • Restaurante</p>
-      </div>
+      <h1 class="branding__titulo">
+        CRISCAR
+      </h1>
+      <p class="branding__slogan">
+        Panadería • Cafetería • Restaurante
+      </p>
+    
     </div>
+
   </header>
   <main>
     <!-- HERO -->
@@ -67,66 +66,65 @@
     <!-- PRODUCTOS DESTACADOS -->
     <section class="productos">
     
-      <h2>Productos Destacados</h2>
+        <h2>Productos Destacados</h2>
     
-      <p class="productos__descripcion">
-        Elaboramos cada día productos frescos y artesanales para acompañarte en cualquier momento.
-      </p>
+        <p class="productos__descripcion">
+          Elaboramos cada día productos frescos y artesanales para acompañarte en cualquier momento.
+        </p>
     
-      <div class="productos__grid">
+        <div class="productos__grid">
     
-        <article class="producto__card">
+          <article class="producto__card">
     
-          <img src="./assets/imgs/medialuna.webp" alt="Panificados artesanales">
+            <img src="./assets/imgs/medialuna.webp" alt="Panificados artesanales">
     
-          <h3>Panificados</h3>
+            <h3>Panificados</h3>
     
-          <p>
-            Medialunas, criollos, facturas, panes y especialidades
-            recién horneadas todos los días.
-          </p>
+            <p>
+              Medialunas, criollos, facturas, panes y especialidades
+              recién horneadas todos los días.
+            </p>
     
-          <a class="btn btn-principal" href="./pages/menu.html">
-            Ver más
-          </a>
+            <a class="btn btn-principal" href="./pages/menu.html">
+              Ver más
+            </a>
     
-        </article>
+          </article>
     
-        <article class="producto__card">
+          <article class="producto__card">
     
-          <img src="./assets/imgs/cafe.webp" alt="Cafetería">
+            <img src="./assets/imgs/cafe.webp" alt="Cafetería">
     
-          <h3>Cafetería</h3>
+            <h3>Cafetería</h3>
     
-          <p>
-            Café, capuchino, submarino, licuados e infusiones para
-            disfrutar en un ambiente cálido.
-          </p>
+            <p>
+              Café, capuchino, submarino, licuados e infusiones para
+              disfrutar en un ambiente cálido.
+            </p>
     
-          <a class="btn btn-principal" href="./pages/menu.html">
-            Ver más
-          </a>
+            <a class="btn btn-principal" href="./pages/menu.html">
+              Ver más
+            </a>
     
-        </article>
+          </article>
     
-        <article class="producto__card">
+          <article class="producto__card">
     
-          <img src="./assets/imgs/almuerzo.webp" alt="Almuerzos y cenas">
+            <img src="./assets/imgs/almuerzo.webp" alt="Almuerzos y cenas">
     
-          <h3>Almuerzos y Cenas</h3>
+            <h3>Almuerzos y Cenas</h3>
     
-          <p>
-            Pizzas, hamburguesas, sándwiches y platos elaborados para
-            compartir en familia.
-          </p>
+            <p>
+              Pizzas, hamburguesas, sándwiches y platos elaborados para
+              compartir en familia.
+            </p>
     
-          <a class="btn btn-principal" href="./pages/menu.html">
-            Ver más
-          </a>
+            <a class="btn btn-principal" href="./pages/menu.html">
+              Ver más
+            </a>
     
-        </article>
-      </div>
-    
+          </article>
+        </div>
     </section>
     
     <!-- NOSOTROS -->
