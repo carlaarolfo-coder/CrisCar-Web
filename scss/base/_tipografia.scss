@@ -44,4 +44,7 @@ a{
     font-family: $fuente-titulos;
     text-decoration: none;
     color: inherit;
-}
+ &:hover {
+    text-decoration: none;
+  }
+  }

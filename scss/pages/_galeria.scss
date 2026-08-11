@@ -1,36 +1,26 @@
 @use "../utilities/variables" as *;
-@use "../utilities/mixins" as *;
 
-// =======================
-// GALERÍA
-// =======================
+.galeria {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: $espaciado-md;
+  }
 
+  &__item {
+    overflow: hidden;
+    border-radius: $radio;
 
-.galeria__grid{
+    img {
+      width: 100%;
+      display: block;
+      transition: transform 0.4s ease;
+    }
 
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:$espaciado-md;
-
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+  }
 }
-
-.galeria__item img{
-
-    width:100%;
-
-    display:block;
-
-    border-radius:$radio;
-
-    transition:.4s;
-
-}
-
-.galeria__item:hover img{
-
-    transform:scale(1.05);
-
-}
-

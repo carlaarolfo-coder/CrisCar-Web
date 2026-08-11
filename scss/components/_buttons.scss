@@ -7,11 +7,22 @@
     font-family: $fuente-titulos;
     font-weight: 600;
     transition: .3s;
+     cursor: pointer;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
 }
 
 .btn-principal{
+    @extend .btn;
+
     background: $color-principal;
     color: $color-blanco;
+
+  &:hover {
+    box-shadow: $sombra;
+  }
 }
 
 .btn-principal:hover{
@@ -20,9 +31,15 @@
 }
 
 .btn-secundario{
+    @extend .btn;
+
     border: 2px solid $color-principal;
     color: $color-principal;
     background: transparent;
+   &:hover {
+    background: $color-principal;
+    color: $color-blanco;
+  }
 }
 
 .btn-secundario:hover{

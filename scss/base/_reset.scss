@@ -1,8 +1,12 @@
-@use "variables" as *;
+@use "../utilities/variables" as *;
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
@@ -11,4 +15,14 @@ body{
     color:$color-texto;
     font-family:$fuente-texto;
 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
 }
