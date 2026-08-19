@@ -11,7 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
 
   <meta name="description" content="CrisCar: panadería, cafetería y restaurante en Río Segundo y Pilar.">
@@ -20,25 +20,54 @@
 
   <meta name="author" content="CrisCar">
 
+  <meta name="robots" content="index, follow">
+
 </head>
 
 <body>
   <header>
-  <nav class="menu">
-    <button class="menu__boton">
-      ☰ Descubrí CrisCar
+ <nav class="menu">
+  <div class="dropdown">
+    <button
+      class="menu__boton dropdown-toggle"
+      type="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false">
+      ☰ 
     </button>
-    <ul class="menu__lista">
-      <li class="menu__item"><a href="./pages/menu.html">Menú</a></li>
-      <li class="menu__item"><a href="./pages/galeria.html">Galería</a></li>
-      <li class="menu__item"><a href="./pages/nosotros.html">Nosotros</a></li>
-      <li class="menu__item"><a href="./pages/contacto.html">Contacto</a></li>
+
+    <ul class="dropdown-menu menu__lista">
+      <li>
+        <a class="dropdown-item menu__item" href="../pages/menu.html">
+          Menú
+        </a>
+      </li>
+
+      <li>
+        <a class="dropdown-item menu__item" href="../pages/galeria.html">
+          Galería
+        </a>
+      </li>
+
+      <li>
+        <a class="dropdown-item menu__item" href="../pages/nosotros.html">
+          Nosotros
+        </a>
+      </li>
+
+      <li>
+        <a class="dropdown-item menu__item" href="../pages/contacto.html">
+          Contacto
+        </a>
+      </li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
     <div class="branding">
       <h1 class="branding__titulo">
-       CRISCAR  </h1>
+        CrisCar
+      </h1>
       <p class="branding__slogan">
         Panadería • Cafetería • Restaurante
       </p>
@@ -47,6 +76,7 @@
 
   </header>
   <main>
+
     <!-- HERO -->
     <section class="hero">
       <div class="hero__texto">
@@ -131,95 +161,28 @@
           </article>
         </div>
     </section>
-    
-    
-    <!-- UBICACIÓN -->
-    <section class="ubicacion">
-    
-      <h2>Visitanos</h2>
-    
-      <p class="ubicacion__descripcion">
-        Te esperamos en cualquiera de nuestras sucursales para disfrutar de nuestros
-        productos artesanales y un ambiente cálido.
-      </p>
-    
-      <div class="ubicacion__grid">
-    
-        <article class="sucursal">
-    
-          <h3>📍 Río Segundo</h3>
-    
-          <p>
-            Corrientes y Deán Funes
-          </p>
-    
-          <p>
-            Lunes a Jueves
-            7:00 a 23:00 hs
-            Viernes 
-            7:00 a 00:00 hs
-            Sábados, Domingos y Feriados
-            8:00 a 00 hs
-          </p>
-    
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1436.771155631169!2d-63.903667776966714!3d-31.65324585355952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432cb4db6b55e3b%3A0x7f09855034afb322!2sCris%20Car!5e0!3m2!1ses-419!2sar!4v1785244830551!5m2!1ses-419!2sar"
-            class="sucursal__mapa" title="Ubicación de CrisCar Río Segundo" loading="lazy" allowfullscreen
-            referrerpolicy="strict-origin-when-cross-origin">
-          </iframe>
-    
-        </article>
-    
-        <article class="sucursal">
-    
-          <h3>📍 Pilar</h3>
-    
-          <p>
-            Ruta 9 y Bv Argentino 
-          </p>
-    
-          <p>
-            Lunes a Viernes
-            7:30 a 12:30 hs
-            16:30 a 20:00 hs
-            Sábados y feriados
-            8:00 a 13:00 hs
-            16:30 a 20:00 hs
-            Domingos
-            8:00 a 13:00 hs
-          </p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d677.4766724354524!2d-63.87877203885497!3d-31.6819844730092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432cb0020567cdf%3A0x8d973794e2021b77!2scriscar!5e1!3m2!1ses-419!2sar!4v1786393590495!5m2!1ses-419!2sar"
-            class="sucursal__mapa" title="Ubicación de CrisCar Pilar" loading="lazy" allowfullscreen
-            referrerpolicy="strict-origin-when-cross-origin">
-          </iframe>
-          
-        </article>
-    
-      </div>
-    
-    </section>
-    
-    <section class="cta">
-    
-      <h2>¡Te esperamos!</h2>
-    
-      <p>
-        Viví la experiencia CrisCar con productos frescos,
-        atención cálida y un espacio pensado para compartir.
-      </p>
-    
-      <a class="btn btn-principal" href="./pages/contacto.html">
-        Escribinos 
-      </a>
-    
-    </section>
-
+  
   </main>
 
   <footer>
     <p>© 2026 CRISCAR - Panadería · Cafetería · Restaurante</p>
     <p>Todos los derechos reservados.</p>
+    <nav>
+      <ul>
+        <li><a href="https://www.instagram.com/criscar____?utm_source=qr_code" target="_blank" rel="noopener noreferrer">
+            <img src="./assets/logos/instagram.png" alt="Instagram de CrisCar" class="icono-social">
+          </a>
+        </li>
+        <li><a href="./pages/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+  
+  <script>
+    console.log("Bootstrap:", typeof bootstrap);
+  </script>
+</body>
 </html>
