@@ -1,48 +1,39 @@
 @use "../utilities/variables" as *;
 
-.btn{
-    display: inline-block;
-    padding: .8rem 1.6rem;
-    border-radius: $radio;
-    font-family: $fuente-titulos;
-    font-weight: 600;
-    transition: .3s;
-     cursor: pointer;
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  border-radius: $radio;
+  font-family: $fuente-titulos;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-3px);
   }
 }
 
-.btn-principal{
-    @extend .btn;
+.btn-principal {
+  @extend .btn;
 
-    background: $color-principal;
-    color: $color-blanco;
+  background: $color-principal;
+  color: $color-blanco;
 
   &:hover {
     box-shadow: $sombra;
   }
 }
 
-.btn-principal:hover{
-    transform: translateY(-3px);
-    box-shadow: $sombra;
-}
+.btn-secundario {
+  @extend .btn;
 
-.btn-secundario{
-    @extend .btn;
+  border: 2px solid $color-principal;
+  color: $color-principal;
+  background: transparent;
 
-    border: 2px solid $color-principal;
-    color: $color-principal;
-    background: transparent;
-   &:hover {
+  &:hover {
     background: $color-principal;
     color: $color-blanco;
   }
-}
-
-.btn-secundario:hover{
-    background: $color-principal;
-    color: $color-blanco;
 }

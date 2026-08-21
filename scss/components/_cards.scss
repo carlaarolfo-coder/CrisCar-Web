@@ -1,0 +1,29 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.card-base {
+  @include card-estilo;
+
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $sombra;
+  }
+}
+
+.card-base__imagen {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: $radio;
+  margin-bottom: $espaciado-sm;
+}
+.card-destacada {
+  @extend .card-base;
+}
+
+.card-destacada__imagen {
+  @extend .card-base__imagen;
+}

@@ -13,7 +13,7 @@
   align-items: center;
   gap: $espaciado-lg;
 
-  &__contenido {
+  &__texto {
     display: flex;
     flex-direction: column;
     gap: $espaciado-md;
@@ -125,6 +125,7 @@
     margin-inline: auto;
   }
 }
+
 
 @media (max-width: 768px) {
 

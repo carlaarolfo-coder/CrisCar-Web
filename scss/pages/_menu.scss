@@ -1,6 +1,84 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
-// =======================
-// MENU
-// =======================
+.menu-presentacion {
+  @include contenedor-seccion(4rem 0 2rem);
+
+  text-align: center;
+
+  h2 {
+    color: $color-principal;
+    font-family: $fuente-titulos;
+    margin-bottom: $espaciado-sm;
+  }
+
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.menu-categorias {
+  @include contenedor-seccion(2rem 0 4rem);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $espaciado-md;
+}
+
+.menu-card {
+  @include card-estilo;
+
+  text-align: center;
+  border: 1px solid rgba(150, 77, 42, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &__icono {
+    font-size: 2.5rem;
+    margin-bottom: $espaciado-sm;
+  }
+
+  h3 {
+    color: $color-principal;
+    font-family: $fuente-titulos;
+    margin-bottom: $espaciado-sm;
+  }
+
+  p {
+    margin-bottom: $espaciado-md;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: $sombra;
+  }
+}
+
+.menu-cta {
+  @include contenedor-seccion(3rem 0 5rem);
+
+  text-align: center;
+
+  h2 {
+    color: $color-principal;
+    font-family: $fuente-titulos;
+    margin-bottom: $espaciado-sm;
+  }
+
+  p {
+    max-width: 650px;
+    margin: 0 auto $espaciado-md;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .menu-categorias {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-presentacion,
+  .menu-cta {
+    width: 90%;
+  }
+}

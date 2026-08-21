@@ -1,6 +1,22 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .galeria {
+  @include contenedor-seccion;
+
+  text-align: center;
+
+  h2 {
+    color: $color-principal;
+    font-family: $fuente-titulos;
+    margin-bottom: $espaciado-sm;
+  }
+
+  > p {
+    max-width: 700px;
+    margin: 0 auto $espaciado-lg;
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -10,17 +26,28 @@
   &__item {
     overflow: hidden;
     border-radius: $radio;
+    box-shadow: $sombra;
 
     img {
       width: 100%;
+      height: 280px;
+      object-fit: cover;
       display: block;
       transition: transform 0.4s ease;
-    }
 
-    &:hover {
-      img {
+      &:hover {
         transform: scale(1.05);
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    width: 90%;
+
+    &__grid {
+      grid-template-columns: 1fr;
     }
   }
 }
